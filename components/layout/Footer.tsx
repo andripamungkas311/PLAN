@@ -18,30 +18,30 @@ export default function Footer() {
               <span className="font-bold text-[#E8D5A3]">FloorPlan Studio</span>
             </div>
             <p className="text-[#8A8A8A] text-sm max-w-xs leading-relaxed">
-              Transform standard floor plans into premium stylish visualizations in minutes.
+              Превращайте стандартные планировки в стильные Premium-визуализации за минуты.
             </p>
           </div>
 
           <div>
-            <h4 className="text-[#E8D5A3] text-sm font-semibold mb-3">Product</h4>
+            <h4 className="text-[#E8D5A3] text-sm font-semibold mb-3">Продукт</h4>
             <ul className="space-y-2">
-              <li><Link href="/editor" className="text-[#8A8A8A] hover:text-[#C9A84C] text-sm transition-colors">Editor</Link></li>
-              <li><Link href="/pricing" className="text-[#8A8A8A] hover:text-[#C9A84C] text-sm transition-colors">Pricing</Link></li>
-              <li><Link href="/dashboard" className="text-[#8A8A8A] hover:text-[#C9A84C] text-sm transition-colors">Dashboard</Link></li>
+              <li><Link href="/editor" className="text-[#8A8A8A] hover:text-[#C9A84C] text-sm transition-colors">Редактор</Link></li>
+              <li><Link href="/pricing" className="text-[#8A8A8A] hover:text-[#C9A84C] text-sm transition-colors">Тарифы</Link></li>
+              <li><Link href="/dashboard" className="text-[#8A8A8A] hover:text-[#C9A84C] text-sm transition-colors">Дашборд</Link></li>
             </ul>
           </div>
 
           <div>
-            <h4 className="text-[#E8D5A3] text-sm font-semibold mb-3">Legal</h4>
+            <h4 className="text-[#E8D5A3] text-sm font-semibold mb-3">Правовая информация</h4>
             <ul className="space-y-2">
-              <li><Link href="#" className="text-[#8A8A8A] hover:text-[#C9A84C] text-sm transition-colors">Privacy Policy</Link></li>
-              <li><Link href="#" className="text-[#8A8A8A] hover:text-[#C9A84C] text-sm transition-colors">Terms of Service</Link></li>
+              <li><Link href="#" className="text-[#8A8A8A] hover:text-[#C9A84C] text-sm transition-colors">Политика конфиденциальности</Link></li>
+              <li><Link href="#" className="text-[#8A8A8A] hover:text-[#C9A84C] text-sm transition-colors">Условия использования</Link></li>
             </ul>
           </div>
         </div>
 
         <div className="mt-10 pt-6 border-t border-[rgba(201,168,76,0.1)] text-center text-[#8A8A8A] text-xs">
-          © 2024 FloorPlan Studio. All rights reserved.
+          © 2024 FloorPlan Studio. Все права защищены.
         </div>
       </div>
     </footer>

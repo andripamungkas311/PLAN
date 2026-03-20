@@ -4,23 +4,23 @@ import Card from '@/components/ui/Card'
 const benefits = [
   {
     icon: Zap,
-    title: 'Lightning Fast',
-    description: 'AI-powered recognition processes your floor plan in under 10 seconds. No manual tracing required.',
+    title: 'Молниеносная скорость',
+    description: 'ИИ-распознавание обрабатывает планировку менее чем за 10 секунд. Никаких ручных построений.',
   },
   {
     icon: Star,
-    title: 'Premium Quality',
-    description: 'Professional-grade output with crisp lines, elegant typography, and pixel-perfect proportions.',
+    title: 'Премиум-качество',
+    description: 'Профессиональный результат с чёткими линиями, элегантной типографикой и точными пропорциями.',
   },
   {
     icon: Shield,
-    title: 'Privacy First',
-    description: 'Your files are processed securely and never stored permanently. Your data stays yours.',
+    title: 'Конфиденциальность прежде всего',
+    description: 'Ваши файлы обрабатываются безопасно и не хранятся постоянно. Ваши данные остаются вашими.',
   },
   {
     icon: Users,
-    title: 'Team Ready',
-    description: 'Share projects with your team, collaborate in real-time, and manage everything from a dashboard.',
+    title: 'Командная работа',
+    description: 'Делитесь проектами с командой, сотрудничайте в реальном времени и управляйте всем из дашборда.',
   },
 ]
 
@@ -30,10 +30,10 @@ export default function Benefits() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4">
-            Why <span className="text-[#C9A84C]">FloorPlan Studio</span>
+            Почему <span className="text-[#C9A84C]">FloorPlan Studio</span>
           </h2>
           <p className="text-[#8A8A8A] max-w-xl mx-auto">
-            Built for architects, real estate professionals, and interior designers who demand excellence.
+            Создан для архитекторов, риэлторов и дизайнеров интерьеров, стремящихся к совершенству.
           </p>
         </div>
 

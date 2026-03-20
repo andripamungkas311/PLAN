@@ -25,15 +25,15 @@ export default function Header() {
           </Link>
 
           <nav className="hidden md:flex items-center gap-6">
-            <Link href="/editor" className="text-sm text-[#8A8A8A] hover:text-[#E8D5A3] transition-colors">Editor</Link>
-            <Link href="/pricing" className="text-sm text-[#8A8A8A] hover:text-[#E8D5A3] transition-colors">Pricing</Link>
-            <Link href="/dashboard" className="text-sm text-[#8A8A8A] hover:text-[#E8D5A3] transition-colors">Dashboard</Link>
+            <Link href="/editor" className="text-sm text-[#8A8A8A] hover:text-[#E8D5A3] transition-colors">Редактор</Link>
+            <Link href="/pricing" className="text-sm text-[#8A8A8A] hover:text-[#E8D5A3] transition-colors">Тарифы</Link>
+            <Link href="/dashboard" className="text-sm text-[#8A8A8A] hover:text-[#E8D5A3] transition-colors">Дашборд</Link>
           </nav>
 
           <div className="hidden md:flex items-center gap-3">
-            <Button variant="ghost" size="sm">Sign In</Button>
+            <Button variant="ghost" size="sm">Войти</Button>
             <Button variant="primary" size="sm">
-              <Link href="/editor">Try Free</Link>
+              <Link href="/editor">Попробовать бесплатно</Link>
             </Button>
           </div>
 
@@ -48,11 +48,11 @@ export default function Header() {
 
       {mobileOpen && (
         <div className="md:hidden bg-[#111111] border-t border-[rgba(201,168,76,0.15)] px-4 py-4 flex flex-col gap-3">
-          <Link href="/editor" className="text-sm text-[#8A8A8A] hover:text-[#E8D5A3] py-2">Editor</Link>
-          <Link href="/pricing" className="text-sm text-[#8A8A8A] hover:text-[#E8D5A3] py-2">Pricing</Link>
-          <Link href="/dashboard" className="text-sm text-[#8A8A8A] hover:text-[#E8D5A3] py-2">Dashboard</Link>
+          <Link href="/editor" className="text-sm text-[#8A8A8A] hover:text-[#E8D5A3] py-2">Редактор</Link>
+          <Link href="/pricing" className="text-sm text-[#8A8A8A] hover:text-[#E8D5A3] py-2">Тарифы</Link>
+          <Link href="/dashboard" className="text-sm text-[#8A8A8A] hover:text-[#E8D5A3] py-2">Дашборд</Link>
           <Button variant="primary" size="sm" className="mt-2">
-            <Link href="/editor">Try Free</Link>
+            <Link href="/editor">Попробовать бесплатно</Link>
           </Button>
         </div>
       )}

@@ -4,26 +4,26 @@ const steps = [
   {
     icon: Upload,
     step: '01',
-    title: 'Upload',
-    description: 'Upload any floor plan image — photos, PDFs, scans, or sketches.',
+    title: 'Загрузка',
+    description: 'Загрузите изображение планировки — фото, PDF, сканы или эскизы.',
   },
   {
     icon: Eye,
     step: '02',
-    title: 'Recognize',
-    description: 'AI automatically detects rooms, walls, doors, and windows.',
+    title: 'Распознавание',
+    description: 'ИИ автоматически определяет комнаты, стены, двери и окна.',
   },
   {
     icon: Edit,
     step: '03',
-    title: 'Edit',
-    description: 'Customize labels, colors, room names, and furniture with our editor.',
+    title: 'Редактирование',
+    description: 'Настраивайте подписи, цвета, названия комнат и мебель.',
   },
   {
     icon: Download,
     step: '04',
-    title: 'Export',
-    description: 'Export as high-resolution PNG, SVG, or PDF ready for use.',
+    title: 'Экспорт',
+    description: 'Экспортируйте в PNG, SVG или PDF высокого разрешения.',
   },
 ]
 
@@ -33,10 +33,10 @@ export default function HowItWorks() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4">
-            How it <span className="text-[#C9A84C]">works</span>
+            Как это <span className="text-[#C9A84C]">работает</span>
           </h2>
           <p className="text-[#8A8A8A] max-w-xl mx-auto">
-            Four simple steps to turn any floor plan into a premium presentation-ready visualization.
+            Четыре простых шага для превращения любой планировки в Premium-визуализацию.
           </p>
         </div>
 

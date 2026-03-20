@@ -9,12 +9,12 @@ interface Room {
 }
 
 const demoRooms: Room[] = [
-  { name: 'Living Room', area: '28.5', color: '#C9A84C' },
-  { name: 'Kitchen', area: '12.0', color: '#C9A84C' },
-  { name: 'Bedroom 1', area: '18.2', color: '#C9A84C' },
-  { name: 'Bedroom 2', area: '14.8', color: '#C9A84C' },
-  { name: 'Bathroom', area: '5.5', color: '#C9A84C' },
-  { name: 'Hallway', area: '8.3', color: '#C9A84C' },
+  { name: 'Гостиная', area: '28.5', color: '#C9A84C' },
+  { name: 'Кухня', area: '12.0', color: '#C9A84C' },
+  { name: 'Спальня 1', area: '18.2', color: '#C9A84C' },
+  { name: 'Спальня 2', area: '14.8', color: '#C9A84C' },
+  { name: 'Ванная', area: '5.5', color: '#C9A84C' },
+  { name: 'Коридор', area: '8.3', color: '#C9A84C' },
 ]
 
 export default function RightPanel() {
@@ -30,7 +30,7 @@ export default function RightPanel() {
     <aside className="w-60 flex-shrink-0 border-l border-[rgba(201,168,76,0.15)] bg-[#0d0d0d] flex flex-col overflow-y-auto">
       {/* Rooms list */}
       <div className="p-4 border-b border-[rgba(201,168,76,0.1)]">
-        <h3 className="text-[#8A8A8A] text-xs font-semibold uppercase tracking-wider mb-3">Rooms</h3>
+        <h3 className="text-[#8A8A8A] text-xs font-semibold uppercase tracking-wider mb-3">Комнаты</h3>
         <div className="space-y-1">
           {demoRooms.map((room, idx) => (
             <button
@@ -52,11 +52,11 @@ export default function RightPanel() {
       {/* Properties panel */}
       {selected !== null && (
         <div className="p-4">
-          <h3 className="text-[#8A8A8A] text-xs font-semibold uppercase tracking-wider mb-4">Properties</h3>
+          <h3 className="text-[#8A8A8A] text-xs font-semibold uppercase tracking-wider mb-4">Свойства</h3>
 
           <div className="space-y-4">
             <div>
-              <label className="text-[#8A8A8A] text-xs block mb-1.5">Room Name</label>
+              <label className="text-[#8A8A8A] text-xs block mb-1.5">Название комнаты</label>
               <input
                 type="text"
                 value={editName}
@@ -66,7 +66,7 @@ export default function RightPanel() {
             </div>
 
             <div>
-              <label className="text-[#8A8A8A] text-xs block mb-1.5">Area (m²)</label>
+              <label className="text-[#8A8A8A] text-xs block mb-1.5">Площадь (м²)</label>
               <input
                 type="number"
                 defaultValue={demoRooms[selected]?.area}
@@ -75,7 +75,7 @@ export default function RightPanel() {
             </div>
 
             <div>
-              <label className="text-[#8A8A8A] text-xs block mb-1.5">Line Color</label>
+              <label className="text-[#8A8A8A] text-xs block mb-1.5">Цвет линии</label>
               <div className="flex gap-2">
                 {['#C9A84C', '#D4AF37', '#E8D5A3', '#8A8A8A', '#ffffff'].map(c => (
                   <button
@@ -89,7 +89,7 @@ export default function RightPanel() {
             </div>
 
             <div>
-              <label className="text-[#8A8A8A] text-xs block mb-1.5">Fill Opacity</label>
+              <label className="text-[#8A8A8A] text-xs block mb-1.5">Прозрачность заливки</label>
               <input
                 type="range"
                 min="0"
@@ -100,7 +100,7 @@ export default function RightPanel() {
             </div>
 
             <button className="w-full bg-[#C9A84C] hover:bg-[#D4AF37] text-black text-sm font-semibold py-2 rounded-lg transition-colors">
-              Apply Changes
+              Применить
             </button>
           </div>
         </div>
@@ -108,12 +108,12 @@ export default function RightPanel() {
 
       {/* Style presets */}
       <div className="p-4 border-t border-[rgba(201,168,76,0.1)] mt-auto">
-        <h3 className="text-[#8A8A8A] text-xs font-semibold uppercase tracking-wider mb-3">Style Presets</h3>
+        <h3 className="text-[#8A8A8A] text-xs font-semibold uppercase tracking-wider mb-3">Стили</h3>
         <div className="grid grid-cols-3 gap-2">
           {[
-            { name: 'Gold', bg: '#C9A84C' },
-            { name: 'Silver', bg: '#A0A0A0' },
-            { name: 'Blue', bg: '#4A90D9' },
+            { name: 'Золото', bg: '#C9A84C' },
+            { name: 'Серебро', bg: '#A0A0A0' },
+            { name: 'Синий', bg: '#4A90D9' },
           ].map(preset => (
             <button
               key={preset.name}

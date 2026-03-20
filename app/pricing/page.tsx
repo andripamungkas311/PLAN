@@ -5,54 +5,54 @@ import Link from 'next/link'
 
 const plans = [
   {
-    name: 'Free',
+    name: 'Бесплатно',
     price: '$0',
-    period: 'forever',
-    description: 'Perfect for trying out FloorPlan Studio.',
+    period: 'навсегда',
+    description: 'Идеально для знакомства с FloorPlan Studio.',
     features: [
-      '3 projects per month',
-      'Basic room recognition',
-      'Standard export (PNG)',
-      'Watermarked output',
-      'Community support',
+      '3 проекта в месяц',
+      'Базовое распознавание комнат',
+      'Стандартный экспорт (PNG)',
+      'Вывод с водяным знаком',
+      'Поддержка сообщества',
     ],
-    cta: 'Get Started Free',
+    cta: 'Начать бесплатно',
     href: '/editor',
     highlighted: false,
   },
   {
-    name: 'Pro',
+    name: 'Про',
     price: '$19',
-    period: 'per month',
-    description: 'For professionals who need premium output.',
+    period: 'в месяц',
+    description: 'Для профессионалов, которым нужен Premium-результат.',
     features: [
-      'Unlimited projects',
-      'Advanced AI recognition',
-      'High-res export (PNG, SVG, PDF)',
-      'No watermarks',
-      'Custom style presets',
-      'Priority support',
+      'Неограниченные проекты',
+      'Продвинутое распознавание ИИ',
+      'Экспорт в высоком разрешении (PNG, SVG, PDF)',
+      'Без водяных знаков',
+      'Пользовательские стили',
+      'Приоритетная поддержка',
     ],
-    cta: 'Start Pro Trial',
+    cta: 'Начать пробный период',
     href: '/editor',
     highlighted: true,
-    badge: 'Most Popular',
+    badge: 'Самый популярный',
   },
   {
-    name: 'Business',
+    name: 'Бизнес',
     price: '$49',
-    period: 'per month',
-    description: 'For teams and agencies with high volume needs.',
+    period: 'в месяц',
+    description: 'Для команд и агентств с высоким объёмом работ.',
     features: [
-      'Everything in Pro',
-      'Team collaboration',
-      'API access',
-      'White-label exports',
-      'Custom branding',
-      'Dedicated support',
-      'SLA guarantee',
+      'Всё из тарифа Про',
+      'Командная работа',
+      'Доступ к API',
+      'Экспорт под брендом клиента',
+      'Персональный брендинг',
+      'Персональная поддержка',
+      'Гарантия SLA',
     ],
-    cta: 'Contact Sales',
+    cta: 'Связаться с отделом продаж',
     href: '/editor',
     highlighted: false,
   },
@@ -66,10 +66,10 @@ export default function PricingPage() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h1 className="text-4xl sm:text-5xl font-bold mb-4">
-              Simple, <span className="text-[#C9A84C]">transparent pricing</span>
+              Простые, <span className="text-[#C9A84C]">прозрачные цены</span>
             </h1>
             <p className="text-[#8A8A8A] text-lg max-w-xl mx-auto">
-              No hidden fees. Cancel anytime. Start free, upgrade when you need more.
+              Никаких скрытых платежей. Отмена в любое время. Начните бесплатно.
             </p>
           </div>
 
@@ -124,9 +124,9 @@ export default function PricingPage() {
           {/* FAQ teaser */}
           <div className="mt-16 text-center">
             <p className="text-[#8A8A8A] text-sm">
-              Have questions?{' '}
+              Есть вопросы?{' '}
               <span className="text-[#C9A84C] cursor-pointer hover:underline">
-                <Zap size={14} className="inline mb-0.5" /> Chat with us
+                <Zap size={14} className="inline mb-0.5" /> Напишите нам
               </span>
             </p>
           </div>
