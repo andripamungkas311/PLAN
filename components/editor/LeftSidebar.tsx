@@ -9,13 +9,13 @@ interface Tool {
 }
 
 const tools: Tool[] = [
-  { id: 'select', icon: Move, label: 'Select & Move' },
-  { id: 'room', icon: Square, label: 'Draw Room' },
-  { id: 'wall', icon: Minus, label: 'Add Wall' },
-  { id: 'text', icon: Type, label: 'Add Text' },
-  { id: 'zoomin', icon: ZoomIn, label: 'Zoom In' },
-  { id: 'zoomout', icon: ZoomOut, label: 'Zoom Out' },
-  { id: 'grid', icon: Grid, label: 'Toggle Grid' },
+  { id: 'select', icon: Move, label: 'Выбор и перемещение' },
+  { id: 'room', icon: Square, label: 'Нарисовать комнату' },
+  { id: 'wall', icon: Minus, label: 'Добавить стену' },
+  { id: 'text', icon: Type, label: 'Добавить текст' },
+  { id: 'zoomin', icon: ZoomIn, label: 'Увеличить' },
+  { id: 'zoomout', icon: ZoomOut, label: 'Уменьшить' },
+  { id: 'grid', icon: Grid, label: 'Сетка' },
 ]
 
 interface LeftSidebarProps {

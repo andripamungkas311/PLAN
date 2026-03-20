@@ -3,12 +3,12 @@ import { FileText, Plus, Star, Clock } from 'lucide-react'
 import Link from 'next/link'
 
 const projects = [
-  { id: 1, name: 'Apartment 3B - Living Floor', rooms: 6, area: '87.3', date: '2 hours ago', starred: true },
-  { id: 2, name: 'Office Layout - Floor 2', rooms: 8, area: '142.0', date: 'Yesterday', starred: false },
-  { id: 3, name: 'Villa Ground Floor', rooms: 9, area: '210.5', date: '3 days ago', starred: true },
-  { id: 4, name: 'Studio Apartment - Draft', rooms: 3, area: '38.2', date: '1 week ago', starred: false },
-  { id: 5, name: 'Penthouse Level 3', rooms: 7, area: '165.8', date: '2 weeks ago', starred: false },
-  { id: 6, name: 'Retail Store Mockup', rooms: 4, area: '95.0', date: '1 month ago', starred: false },
+  { id: 1, name: 'Квартира 3Б — Жилой этаж', rooms: 6, area: '87.3', date: '2 часа назад', starred: true },
+  { id: 2, name: 'Офисная планировка — 2 этаж', rooms: 8, area: '142.0', date: 'Вчера', starred: false },
+  { id: 3, name: 'Вилла — Первый этаж', rooms: 9, area: '210.5', date: '3 дня назад', starred: true },
+  { id: 4, name: 'Студия — Черновик', rooms: 3, area: '38.2', date: '1 неделю назад', starred: false },
+  { id: 5, name: 'Пентхаус — 3 уровень', rooms: 7, area: '165.8', date: '2 недели назад', starred: false },
+  { id: 6, name: 'Торговый зал — Макет', rooms: 4, area: '95.0', date: '1 месяц назад', starred: false },
 ]
 
 export default function DashboardPage() {
@@ -20,25 +20,25 @@ export default function DashboardPage() {
           {/* Header */}
           <div className="flex items-center justify-between mb-10">
             <div>
-              <h1 className="text-3xl font-bold text-white">My Projects</h1>
-              <p className="text-[#8A8A8A] text-sm mt-1">Manage and access your floor plan projects</p>
+              <h1 className="text-3xl font-bold text-white">Мои проекты</h1>
+              <p className="text-[#8A8A8A] text-sm mt-1">Управляйте своими проектами планировок</p>
             </div>
             <Link
               href="/editor"
               className="inline-flex items-center gap-2 bg-[#C9A84C] hover:bg-[#D4AF37] text-black font-semibold px-4 py-2.5 rounded-lg text-sm transition-colors"
             >
               <Plus size={16} />
-              New Project
+              Новый проект
             </Link>
           </div>
 
           {/* Stats */}
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-10">
             {[
-              { label: 'Total Projects', value: '6' },
-              { label: 'Total Area', value: '738.8 m²' },
-              { label: 'Starred', value: '2' },
-              { label: 'This Month', value: '3' },
+              { label: 'Всего проектов', value: '6' },
+              { label: 'Общая площадь', value: '738.8 м²' },
+              { label: 'Избранное', value: '2' },
+              { label: 'В этом месяце', value: '3' },
             ].map(stat => (
               <div key={stat.label} className="bg-[#111111] border border-[rgba(201,168,76,0.2)] rounded-xl p-4">
                 <div className="text-2xl font-bold text-[#E8D5A3] mb-1">{stat.value}</div>
@@ -55,7 +55,7 @@ export default function DashboardPage() {
                 <div className="w-12 h-12 rounded-xl bg-[rgba(201,168,76,0.1)] border border-[rgba(201,168,76,0.3)] flex items-center justify-center group-hover:bg-[rgba(201,168,76,0.2)] transition-all">
                   <Plus size={22} className="text-[#C9A84C]" />
                 </div>
-                <span className="text-[#C9A84C] font-semibold text-sm">New Project</span>
+                <span className="text-[#C9A84C] font-semibold text-sm">Новый проект</span>
               </div>
             </Link>
 
@@ -86,9 +86,9 @@ export default function DashboardPage() {
                     <div className="flex items-center gap-3 text-xs text-[#8A8A8A]">
                       <span className="flex items-center gap-1">
                         <FileText size={11} />
-                        {project.rooms} rooms
+                        {project.rooms} комнат
                       </span>
-                      <span>{project.area} m²</span>
+                      <span>{project.area} м²</span>
                       <span className="flex items-center gap-1 ml-auto">
                         <Clock size={11} />
                         {project.date}

@@ -35,20 +35,20 @@ export default function TopBar({ onUndo, onRedo, onSave, onExport }: TopBarProps
 
       {/* Right: Actions */}
       <div className="flex items-center gap-1.5">
-        <Button variant="ghost" size="sm" onClick={onUndo} title="Undo">
+        <Button variant="ghost" size="sm" onClick={onUndo} title="Отменить">
           <RotateCcw size={16} />
         </Button>
-        <Button variant="ghost" size="sm" onClick={onRedo} title="Redo">
+        <Button variant="ghost" size="sm" onClick={onRedo} title="Повторить">
           <RotateCw size={16} />
         </Button>
         <div className="w-px h-5 bg-[rgba(201,168,76,0.2)] mx-1" />
         <Button variant="secondary" size="sm" onClick={onSave}>
           <Save size={15} />
-          <span className="hidden sm:block">Save</span>
+          <span className="hidden sm:block">Сохранить</span>
         </Button>
         <Button variant="primary" size="sm" onClick={onExport}>
           <Download size={15} />
-          <span className="hidden sm:block">Export</span>
+          <span className="hidden sm:block">Экспорт</span>
         </Button>
       </div>
     </header>

@@ -69,13 +69,13 @@ export default function Canvas({ activeTool = 'select' }: CanvasProps) {
       {/* Status bar */}
       <div className="h-7 flex items-center px-4 gap-4 border-t border-[rgba(201,168,76,0.1)] bg-[#0d0d0d]">
         <span className="text-[#8A8A8A] text-xs">
-          Tool: <span className="text-[#C9A84C] capitalize">{activeTool}</span>
+          Инструмент: <span className="text-[#C9A84C] capitalize">{activeTool}</span>
         </span>
         <span className="text-[#8A8A8A] text-xs">
-          Zoom: <span className="text-[#C9A84C]">{zoom}%</span>
+          Масштаб: <span className="text-[#C9A84C]">{zoom}%</span>
         </span>
         <span className="text-[#8A8A8A] text-xs ml-auto">
-          6 rooms · 87.3 m² total
+          6 комнат · 87.3 м² всего
         </span>
       </div>
     </div>

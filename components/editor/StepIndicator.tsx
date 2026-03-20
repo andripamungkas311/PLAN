@@ -6,10 +6,10 @@ interface Step {
 }
 
 const steps: Step[] = [
-  { id: 1, label: 'Upload' },
-  { id: 2, label: 'Recognize' },
-  { id: 3, label: 'Edit' },
-  { id: 4, label: 'Export' },
+  { id: 1, label: 'Загрузка' },
+  { id: 2, label: 'Распознавание' },
+  { id: 3, label: 'Редактирование' },
+  { id: 4, label: 'Экспорт' },
 ]
 
 interface StepIndicatorProps {
