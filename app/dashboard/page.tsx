@@ -1,4 +1,4 @@
-import Header from '@/components/layout/Header'
+import { Header } from '@/components/layout'
 import { FileText, Plus, Star, Clock } from 'lucide-react'
 import Link from 'next/link'
 
