@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 import { RotateCcw, RotateCw, Save, Download } from 'lucide-react'
-import Button from '@/components/ui/Button'
+import { Button } from '@/components/ui'
 import StepIndicator from './StepIndicator'
 
 interface TopBarProps {

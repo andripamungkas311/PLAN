@@ -1,0 +1,6 @@
+export { default as Canvas } from './Canvas'
+export { default as TopBar } from './TopBar'
+export { default as LeftSidebar } from './LeftSidebar'
+export { default as RightPanel } from './RightPanel'
+export { default as StepIndicator } from './StepIndicator'
+export { default as FloorPlanSVG } from './FloorPlanSVG'

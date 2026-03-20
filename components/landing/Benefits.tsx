@@ -1,5 +1,5 @@
 import { Zap, Shield, Star, Users } from 'lucide-react'
-import Card from '@/components/ui/Card'
+import { Card } from '@/components/ui'
 
 const benefits = [
   {

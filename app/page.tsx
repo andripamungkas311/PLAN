@@ -1,9 +1,5 @@
-import Header from '@/components/layout/Header'
-import Footer from '@/components/layout/Footer'
-import Hero from '@/components/landing/Hero'
-import HowItWorks from '@/components/landing/HowItWorks'
-import BeforeAfter from '@/components/landing/BeforeAfter'
-import Benefits from '@/components/landing/Benefits'
+import { Header, Footer } from '@/components/layout'
+import { Hero, HowItWorks, BeforeAfter, Benefits } from '@/components/landing'
 import Link from 'next/link'
 import { ArrowRight } from 'lucide-react'
 

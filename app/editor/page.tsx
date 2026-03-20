@@ -1,10 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import TopBar from '@/components/editor/TopBar'
-import LeftSidebar from '@/components/editor/LeftSidebar'
-import Canvas from '@/components/editor/Canvas'
-import RightPanel from '@/components/editor/RightPanel'
+import { TopBar, LeftSidebar, Canvas, RightPanel } from '@/components/editor'
 
 export default function EditorPage() {
   const [activeTool, setActiveTool] = useState('select')
