@@ -4,7 +4,27 @@ A browser-based floor-plan editor built with **Next.js 14**, **React 18**, **Typ
 
 ---
 
-## Prerequisites
+## Quick start — standalone HTML
+
+The entire site is available as a single self-contained file:
+
+```
+index.html
+```
+
+Simply open `index.html` in any modern browser — **no build step or server required**.  
+All pages (Landing, Pricing, Dashboard, Editor) are loaded within that single file and navigated through hash-based routing:
+
+| URL hash | Page shown |
+|----------|------------|
+| `#home` (default) | Landing page |
+| `#pricing` | Pricing page |
+| `#dashboard` | Dashboard / My Projects |
+| `#editor` | Floor-plan Editor |
+
+---
+
+## Prerequisites (Next.js development)
 
 | Tool | Minimum version |
 |------|----------------|
@@ -33,6 +53,10 @@ npm install
 ---
 
 ## Launching the site
+
+### Standalone (no build)
+
+Open `index.html` directly in a browser.
 
 ### Development server (hot-reload)
 
@@ -76,6 +100,7 @@ The server reloads automatically whenever you save a file.
 
 ```
 PLAN/
+├── index.html         # ★ Standalone single-page app — open directly in a browser
 ├── app/               # Next.js App Router pages & layouts
 │   ├── dashboard/     # Dashboard page
 │   ├── editor/        # Floor-plan editor page
